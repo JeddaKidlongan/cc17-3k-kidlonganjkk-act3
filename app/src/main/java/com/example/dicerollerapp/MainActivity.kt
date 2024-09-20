@@ -1,6 +1,9 @@
 package com.example.dicerollerapp
 
+import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
+import android.os.Handler
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
@@ -10,11 +13,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Initialize the ImageView and Button from the layout
         val diceImage: ImageView = findViewById(R.id.dice_image)
         val rollButton: Button = findViewById(R.id.roll_button)
 
-        // Set an onClickListener to roll the dice when the button is clicked
         rollButton.setOnClickListener {
             rollDice(diceImage)
         }
@@ -38,4 +39,6 @@ class MainActivity : AppCompatActivity() {
         // Update the ImageView with the correct drawable resource
         diceImage.setImageResource(drawableResource)
     }
+
+    fun rollDice(view: View) {}
 }

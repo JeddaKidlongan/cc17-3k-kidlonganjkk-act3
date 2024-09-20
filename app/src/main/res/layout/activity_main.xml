@@ -7,19 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- ImageView to display the dice roll result -->
     <ImageView
         android:id="@+id/dice_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="dice_roll_result"
+        android:contentDescription="@string/dice_roll_result"
         app:layout_constraintBottom_toTopOf="@+id/roll_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/dice_1"/>
 
-    <!-- Button to roll the dice -->
+
 
     <Button
         android:id="@+id/roll_button"
@@ -27,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="108dp"
         android:onClick="rollDice"
-        android:text="Roll"
+        android:text="@string/roll"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
